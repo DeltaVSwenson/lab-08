@@ -6,13 +6,13 @@ API routes
 ### Author: Student/Group Name
 Jacob Swenson
 ### Links and Resources
-* [submission PR](https://github.com/DeltaVSwenson/lab-06/pull/1)
-* [travis](http://xyz.com)
+* [submission PR](https://github.com/DeltaVSwenson/lab-08/pull/1)
+* [travis](https://travis-ci.com/DeltaVSwenson/lab-08/builds/129194874)
 * [back-end](http://xyz.com) (when applicable)
 * [front-end](http://xyz.com) (when applicable)
 
 #### Documentation
-* [api docs](https://app.swaggerhub.com/apis/deltaVSwenson/lab-06api/0.1#trial) (API servers)
+* [api docs]() (API servers)
 * [jsdoc](http://xyz.com) (Server assignments)
 * [styleguide](http://xyz.com) (React assignments)
 
