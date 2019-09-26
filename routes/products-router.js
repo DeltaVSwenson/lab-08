@@ -15,6 +15,7 @@ router.delete('/api/v1/products/:id', deleteProducts);
 
 function getProducts(request,response,next) {
   // expects an array of objects back
+  console.log(request);
   products.get()
     .then( data => {
       const output = {
@@ -24,6 +25,7 @@ function getProducts(request,response,next) {
       response.status(200).json(output);
     })
     .catch( next );
+  
 }
 
 function getProduct(request,response,next) {

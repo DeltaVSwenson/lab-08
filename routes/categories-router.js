@@ -29,6 +29,7 @@ router.use(express.urlencoded({extended:true}));
 
 function getCategories(request,response,next) {
   // expects an array of object to be returned from the model
+  console.log(request);
   categories.get()
     .then( data => {
       const output = {
