@@ -1,14 +1,14 @@
-# lab-08
+# lab-09
 # LAB - 
 
 ## Project Name
-API routes
+API deployment
 ### Author: Student/Group Name
 Jacob Swenson
 ### Links and Resources
-* [submission PR](https://github.com/DeltaVSwenson/lab-08/pull/1)
-* [travis](https://travis-ci.com/DeltaVSwenson/lab-08/)
-* [back-end](http://xyz.com) (when applicable)
+* [submission PR](https://github.com/DeltaVSwenson/lab-08/pull/2)
+* [travis](https://travis-ci.com/DeltaVSwenson/lab-08/builds/129563063)
+* [back-end](https://lab-09dv.herokuapp.com/api/v1/products) (when applicable)
 * [front-end](http://xyz.com) (when applicable)
 
 #### Documentation
@@ -28,8 +28,8 @@ Usage Notes or examples
 
 ### Setup
 #### `.env` requirements
-* `PORT` - 8080
-* `MONGODB_URI` - URL to the running mongo instance/db
+* `PORT` - 3000
+* `MONGODB_URI` - mongodb://127.0.0.1:27017/lab-08
 
 #### Running the app
 * `npm start`
