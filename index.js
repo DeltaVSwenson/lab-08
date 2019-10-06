@@ -10,5 +10,3 @@ const mongooseOptions = {
 mongoose.connect(process.env.MONGODB_URI, mongooseOptions);
 
 require('./src/app.js').start(process.env.PORT);
-require('./routes/categories-router').start(process.env.PORT);
-require('./routes/products-router').start(process.env.PORT);

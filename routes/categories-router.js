@@ -7,14 +7,14 @@ const morgan = require('morgan');
 const router = express.Router();
 const Categories = require('../src/models/categories');
 const categories = new Categories();
-
+const auth = require('../src/auth/middleware');
 
 // Esoteric Resources
-router.get('/api/v1/categories', getCategories);
-router.post('/api/v1/categories', postCategories);
-router.get('/api/v1/categories/:id', getCategory);
-router.put('/api/v1/categories/:id', putCategories);
-router.delete('/api/v1/categories/:id', deleteCategories);
+router.get('/api/v1/categories',auth(), getCategories);
+router.post('/api/v1/categories',auth('create'), postCategories);
+router.get('/api/v1/categories/:id',auth('read'), getCategory);
+router.put('/api/v1/categories/:id',auth('update'), putCategories);
+router.delete('/api/v1/categories/:id',auth('delete'), deleteCategories);
 
 // Prepare the express router
 
@@ -29,7 +29,6 @@ router.use(express.urlencoded({extended:true}));
 
 function getCategories(request,response,next) {
   // expects an array of object to be returned from the model
-  console.log(request);
   categories.get()
     .then( data => {
       const output = {
