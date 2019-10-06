@@ -3,7 +3,7 @@
 
 process.env.SECRET='test';
 
-require('../../supergoose.js');
+require('./supergoose');
 const auth = require('../../../src/auth/middleware.js');
 const Users = require('../../../src/auth/users-model.js');
 const Roles = require('../../../src/auth/roles-model.js');

@@ -7,7 +7,7 @@ const jwt = require('jsonwebtoken');
 // eslint-disable-next-line no-unused-vars
 const Roles = require('../../../src/auth/roles-model.js');
 const server = require('../../../src/app.js').server;
-const supergoose = require('../../supergoose.js');
+const supergoose = require('./supergoose.js');
 
 const mockRequest = supergoose(server);
 
