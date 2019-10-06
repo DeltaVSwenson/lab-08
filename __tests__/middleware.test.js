@@ -4,9 +4,9 @@
 process.env.SECRET='test';
 
 require('./supergoose');
-const auth = require('../../../src/auth/middleware.js');
-const Users = require('../../../src/auth/users-model.js');
-const Roles = require('../../../src/auth/roles-model.js');
+const auth = require('../src/auth/middleware');
+const Users = require('../src/auth/users-model');
+const Roles = require('../src/auth/roles-model');
 
 let users = {
   superuser: {username: 'superuser', password: 'password', role: 'superuser'},
