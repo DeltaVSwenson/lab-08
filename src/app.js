@@ -12,9 +12,8 @@ const notFound = require( './middleware/404.js' );
 // Routes
 const productsRoutes = require('../routes/products-router');
 const categoriesRoutes = require('../routes/categories-router');
-
+const router = require('./auth/router');
 const app = express();
-
 // App Level MW
 app.use(cors());
 app.use(morgan('dev'));
@@ -23,7 +22,7 @@ app.use(express.json());
 app.use(express.urlencoded({extended:true}));
 
 // Routes
-
+app.use(router);
 app.use(categoriesRoutes);
 app.use(productsRoutes);
 

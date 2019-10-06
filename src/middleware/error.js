@@ -1,8 +1,7 @@
 'use strict';
 
+// eslint-disable-next-line no-unused-vars
 module.exports = (err, req, res, next) => {
-  console.log(next);
-  console.log(req);
   let error = { error: err };
   res.statusCode = 500;
   res.statusMessage = 'Server Error';

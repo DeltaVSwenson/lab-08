@@ -3,19 +3,18 @@
 
 const express = require('express');
 const router = express.Router();
-
+const auth = require('../src/auth/middleware');
 const Products = require('../src/models/products');
 const products = new Products();
-router.get('/api/v1/products', getProducts);
-router.post('/api/v1/products', postProducts);
-router.get('/api/v1/products/:id', getProduct);
-router.put('/api/v1/products/:id', putProducts);
-router.delete('/api/v1/products/:id', deleteProducts);
+router.get('/api/v1/products',auth(), getProducts);
+router.post('/api/v1/products',auth('create'), postProducts);
+router.get('/api/v1/products/:id',auth('read'), getProduct);
+router.put('/api/v1/products/:id',auth('update'), putProducts);
+router.delete('/api/v1/products/:id',auth('delete'), deleteProducts);
 
 
 function getProducts(request,response,next) {
   // expects an array of objects back
-  console.log(request);
   products.get()
     .then( data => {
       const output = {
