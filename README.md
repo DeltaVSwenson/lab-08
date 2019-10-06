@@ -7,7 +7,7 @@ Combining lab 9 and 14 for lab 15
 Jacob Swenson
 ### Links and Resources
 * [submission PR](https://github.com/DeltaVSwenson/lab-08/pull/2)
-* [travis](https://travis-ci.com/DeltaVSwenson/lab-08/builds/129563063)
+* [travis](https://travis-ci.com/DeltaVSwenson/lab-08)
 * [back-end](https://lab-09dv.herokuapp.com/api/v1/products) (when applicable)
 * [front-end](http://xyz.com) (when applicable)
 
